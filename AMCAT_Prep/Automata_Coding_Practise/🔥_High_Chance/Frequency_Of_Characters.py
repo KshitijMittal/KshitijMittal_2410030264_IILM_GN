@@ -33,6 +33,4 @@ input_string = input("Enter a string: ")
 solution = Solution()
 # Get the character frequency and print the result
 frequency = solution.charFrequency(input_string)
-print("Character Frequency:")
-for char, count in frequency.items():
-    print(f"{char}: {count}")
+print(frequency)
