@@ -37,3 +37,20 @@ solution = Solution()
 # Generate the Fibonacci series and print the result
 fibonacci_series = solution.fibonacciSeries(n)
 print(f"The Fibonacci series up to {n} terms is: {fibonacci_series}")
+
+
+# If output isn't in the list format, you can modify the class function as follows:
+'''class Solution:
+    def fibonacciSeries(self, n: int) -> str:
+        if n == 0:
+            return "0"
+        elif n == 1:
+            return "0,1"
+
+        series = [0, 1]
+        for i in range(2, n + 1):
+            next_term = series[i - 1] + series[i - 2]
+            series.append(next_term)
+
+        return ",".join(map(str, series))'''
+# This will print the Fibonacci series as a comma-separated string instead of a list.
